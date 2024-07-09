@@ -31,11 +31,16 @@ a {
     color: inherit;
     text-decoration: none;
 }
+
 /********HEADER*************/
 .header{
     display: flex;
     
 
+}
+.logo img{
+ height: 19px;
+ width: 61.09px;
 }
 .navBar {
    position: relative;
@@ -43,8 +48,7 @@ a {
    justify-content: space-between;
    align-items: center; 
    width: 100%;
-  padding: 0 20px;
-  height: 60px;
+    height: 60px;
   
 }
 .nav__links {
@@ -78,8 +82,130 @@ a {
 .nav__links a:hover {
     color: blue;
 }
-/*************SECTION************/
+/****************Title****************************************************/
+h1{
+    font-size: 22px;
+    margin-bottom: 0px;
+   }
+h2{
+    margin-top: 2px;
+font-size: 16px;
+font-weight: normal;
+}
 
+
+/*************SEARCHBAR************/
+
+.searchContainer {
+  width:  377px;
+  height: 49px;
+ 
+}
+
+.searchBar {
+    display: flex;
+    align-items: center;
+    border: 1px solid#F2F2F2;
+    border-radius: 25px;
+    background-color: white;
+    overflow: hidden;
+   
+    
+}
+
+.searchBar input{
+    border: none;
+    padding: 10px 15px;
+    flex: 1;
+    outline: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    
+}
+
+.searchBar button {
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    width: 132px;
+    height: 49px;
+    font-size: 16px;
+    border-radius: 0 15px 15px 0;
+}
+
+.searchBar img {
+    background-color: #F2F2F2;
+    width: 14px;
+    height: 18px;
+    border-radius:15px, 0px, 0px, 15px ;
+    padding: 16px;
+   }
+
+
+/***************************FilterBar***************************************/
+.filterBarconteiner{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-weight: bold;
+    
+}
+.filterItem{
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    gap: 10px;
+   background-color: white;
+    border-radius: 30px;
+    padding: 4px 15px 4px 15px;
+    border: 2px solid #D9D9D9
+  
+
+}
+.filterItem img{
+  
+    display: flex;
+    align-items: center;
+}
+.filterBarconteiner span{
+    
+    font-size: 18px;
+}
+
+.filterItem p{
+    
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    margin: 11px;
+}
+.filterItem:hover{
+ background-color: #DEEBFF;
+}
+.infoBar{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.infoBarimgcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #d9d9d9;
+    border-radius: 50%;
+    height: 24px;
+    width: 24px;
+}
+.infoBarimgcontainer img{
+   
+    height: 10px;
+    width: 4px;
+    margin: 6px 12px 6px 12px;
+}
+
+
+/*********SECTION******************/
 .section-title {
     margin: 0;
     font-size: 22px;
@@ -121,10 +247,16 @@ a {
     box-sizing: border-box;
 }
 
-/****** Hebergements ***********/
+/****** Hebergements ************************************************************/
 .hebergements {
     width: 65%;
 }
+
+.hebergementsCards .card img{
+    width: 25px;
+    object-fit: contain;
+}
+
 
 /****** Populaires ***********/
 .populaires {

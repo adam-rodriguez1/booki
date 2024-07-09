@@ -16,10 +16,12 @@
 
 <body>
     <div class="main-container">
+        
+        <!-- header*********************************************************************** -->
         <header>
         <nav class="navBar">
             <div class="logo">
-            <img src="/images/logo/Bookilogo.png" alt = "logo booki">
+            <img src="/images/logo/Booki.png" alt = "logo booki">
             </div>
             <div class="nav__links">
             <a href="Hébergements.html">Hébergements</a>
@@ -27,19 +29,79 @@
         </div>
         </nav>
         </header>
+        <!--section infogroupes***********************************************-->
         <main>
+            
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-            <p>En plein centre-ville ou en pleine nature</p>
-
-            <div class="searchBar">
-                <div class="mapsicon"><img src="images/" alt=""></div>
+            <h2>En plein centre-ville ou en pleine nature</h2>
+        
+        <!--barre de recherche********************************************************************-->
+            <div class="searchContainer">
+                <div class="searchBar">
+                    <img src="images/logo/logomaps.png" alt="Icone de recherche">
+                    <input type="text" placeholder="Marseille, France">
+                    <button type="button">Rechercher</button>
+                </div>
+            </div>
+            <!--filterBar*************************************************************************-->
+            <br>
+            <div class="filterBarconteiner">
+                <div>
+                <span>Filtres</span>
+                </div>
+                <div class="filterItem">
+                    <img src="images/logo/billet.png" alt="billet">
+                    <p>economique</p>
+                </div>
+                <div class="filterItem">
+                    <img src="images/logo/personne.png" alt="personne">
+                    <p>Familial</p>
+                </div>
+                <div class="filterItem">
+                    <img src="images/logo/coeur.png" alt="coeur">
+                    <p>Romantique</p>
+                </div>
+                <div class="filterItem">
+                    <img src="images/logo/feu.png" alt="feu">
+                    <p>Nos pépites</p>
+                </div>
+            </div>
+            <div class="infoBar">
+            <div class="infoBarimgcontainer">
+                <img src="images/logo/download.svg" alt="info">
+            </div>
+                <p>Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
 
-
-            <div class="hebergements-and-populaires">
+            <!--cards--------------------------------------------------------------------->                        
+                <div class="hebergements-and-populaires">
                 <section class="hebergements">
-
+                    <h1>Hébergements à Marseille</h1>
+                    <div class="hebergementsCardsfirstrow">
+                    <div class="hebergementsCards">
+                        <a href="#">
+                            <article class="card">
+                                <img src="./images/hebergements/fred-kleber.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                                <div class="card-content">
+                                    <div class="card-txt">
+                                        <h3 class="card-title">Hôtel du port</h3>
+                                        <p class="card-subtitle">Nuit à partir de 52<span class="euro">€</span></p>
+                                    </div>
+                                    <div class="card-rating">
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                        <span class="sr-only">Note de 4 sur 5</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+                </div>
                 </section>
+                <!-- SeParation--------------------------------------------------------------->
                 <section class="populaires">
                     <div class="populaires-title">
                         <h2 class="section-title">Les plus populaires</h2>
